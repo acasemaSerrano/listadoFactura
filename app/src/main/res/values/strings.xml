@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">listadoFactura</string>
+    <string name="ListBill">Factura</string>
+    <string name="action_settings">settings</string>
+</resources>
