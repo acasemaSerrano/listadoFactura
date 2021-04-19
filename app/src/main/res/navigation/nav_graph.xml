@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/ListBill"
-        android:name="com.example.listadofactura.ui.ListBill"
+        android:name="com.example.listadofactura.ui.ListBillFragment"
         android:label="@string/ListBill"
         tools:layout="@layout/fragment_list_bill"/>
 </navigation>

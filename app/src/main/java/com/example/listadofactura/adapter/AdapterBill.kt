@@ -1,5 +1,6 @@
 package com.example.listadofactura.adapter
 
+import android.app.AlertDialog
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -11,8 +12,9 @@ import com.example.listadofactura.R
 import com.example.listadofactura.data.model.Bill
 import com.example.listadofactura.data.repository.JsonToBill
 
-class AdapterBill(val context:Context, var list: ArrayList<Bill>): RecyclerView.Adapter<AdapterBill.Viewholder>() {
+class AdapterBill(val context:Context): RecyclerView.Adapter<AdapterBill.Viewholder>() {
 
+    var list: List<Bill> = listOf<Bill>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Viewholder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.items_bill,parent,false)
@@ -27,7 +29,11 @@ class AdapterBill(val context:Context, var list: ArrayList<Bill>): RecyclerView.
         return list.size
     }
 
-
+    @JvmName("setList1")
+    public fun setList(list: List<Bill>){
+        this.list = list
+        this.notifyDataSetChanged()
+    }
 
 
     inner class Viewholder(view: View): RecyclerView.ViewHolder(view){
@@ -41,7 +47,11 @@ class AdapterBill(val context:Context, var list: ArrayList<Bill>): RecyclerView.
             tvState.text =if (data.descEstado.equals("Pagada")) "" else data.descEstado
 
             itemView.setOnClickListener{
-                Toast.makeText(context, data.toString(), Toast.LENGTH_LONG).show()
+                AlertDialog.Builder(context)
+                    .setTitle("informacion")
+                    .setMessage("esta funcionalidad no esta disponible")
+                    .setPositiveButton("cerrar", null)
+                    .create().show()
             }
         }
     }
