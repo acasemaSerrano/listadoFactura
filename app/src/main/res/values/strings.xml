@@ -4,4 +4,18 @@
     <string name="action_settings">filtro</string>
     <string name="facturas">Facturas</string>
     <string name="consumo">Consumo</string>
+    <string name="filtro">Filtrar facturas</string>
+    <string name="SubTituloFiltro">Con fecha de emision</string>
+    <string name="desde">Desde:</string>
+    <string name="byState">por estado</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="eliminarFiltro">Eliminar filtros</string>
+    <string name="tvHasta">Hasta</string>
+    <string name="pagada">Pagada</string>
+    <string name="anulada">Anulada</string>
+    <string name="cuotaFija">Cuota Fija</string>
+    <string name="pendientePago">Pendiente de pago</string>
+    <string name="planPago">Plan de pago</string>
+    <string name="dateFormat">dia/mes/año</string>
+    <string name="action_closetFilter">cerrar</string>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.listadofactura.ui.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_openFilter"
         android:icon="@drawable/ic_setting_lines"
         android:orderInCategory="100"
         android:title="@string/action_settings"

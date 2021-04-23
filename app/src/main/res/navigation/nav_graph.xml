@@ -9,5 +9,14 @@
         android:id="@+id/ListBill"
         android:name="com.example.listadofactura.ui.ListBillFragment"
         android:label="@string/ListBill"
-        tools:layout="@layout/fragment_list_bill"/>
+        tools:layout="@layout/fragment_list_bill">
+        <action
+            android:id="@+id/action_ListBill_to_filterBillFragment"
+            app:destination="@id/filterBillFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterBillFragment"
+        android:name="com.example.listadofactura.ui.FilterBillFragment"
+        android:label="FilterBillFragment"
+        tools:layout="@layout/fragment_filter_bill" />
 </navigation>
