@@ -145,7 +145,7 @@ class FilterBillFragment: Fragment() {
     fun buttonListenerWithDate(view: View, buttonView:View){
         val button :Button = view.findViewById(buttonView.id)
         showDatePickerDialog{ view, year, month, dayOfMonth ->
-            var ld = LocalDate.of(year, month, dayOfMonth)
+            var ld = LocalDate.of(year, month+1, dayOfMonth)
             button.text = ld.format(dateTimeFormatter)
         }
     }

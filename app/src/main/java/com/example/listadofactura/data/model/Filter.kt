@@ -15,6 +15,7 @@ data class Filter(var dateFrom:LocalDate, var dateTo:LocalDate, var minMoney:Int
              var CuotaFija = "Cuota Fija"
              var PendientePago = "Pendiente de pago"
              var PlanPago = "Plan de pago"
+             var list = arrayListOf<String>(Pagada, Anulada, CuotaFija, PendientePago, PlanPago)
         }
     }
 }
