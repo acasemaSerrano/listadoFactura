@@ -3,13 +3,15 @@ package com.example.listadofactura.ui
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listadofactura.R
 import com.example.listadofactura.adapter.AdapterBill
+import com.example.listadofactura.data.model.Filter
 import com.example.listadofactura.ui.viewmodel.BillViewModel
 
 /**
@@ -19,7 +21,7 @@ class ListBillFragment : Fragment() {
 
 
     lateinit var adapter: AdapterBill
-    private val viewModel = BillViewModel()
+    private val viewModel: BillViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -40,7 +42,9 @@ class ListBillFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_openFilter ->{
-                view?.findNavController()?.navigate(R.id.action_ListBill_to_filterBillFragment)
+                var bundle = Bundle()
+                bundle.putSerializable(Filter.TAG, viewModel.getFilterLiveData().value)
+                view?.findNavController()?.navigate(R.id.action_ListBill_to_filterBillFragment,bundle)
             }
         }
         return super.onOptionsItemSelected(item)
@@ -48,6 +52,10 @@ class ListBillFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        if (savedInstanceState != null) {
+            viewModel.setFilterLiveData(savedInstanceState.getSerializable(Filter.TAG) as Filter)
+        }
 
         val recycleview:RecyclerView = view.findViewById(R.id.listBill)
 
@@ -67,11 +75,15 @@ class ListBillFragment : Fragment() {
         this.adapter= AdapterBill(requireContext())
         recycleview.adapter = adapter
 
-        viewModel.getBillLiveData().observe(viewLifecycleOwner, Observer {
+        viewModel.getBillLiveData().observe(viewLifecycleOwner, {
             adapter.setList(it)
         })
 
         viewModel.downloadJson()
+
+        viewModel.getFilterLiveData().observe(viewLifecycleOwner, {
+
+        })
 
     }
 

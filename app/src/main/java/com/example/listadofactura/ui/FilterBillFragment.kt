@@ -5,20 +5,20 @@ import android.os.Bundle
 import android.view.*
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import com.example.listadofactura.R
 import com.example.listadofactura.data.model.Filter
 import com.example.listadofactura.databinding.FragmentFilterBillBinding
-import com.example.listadofactura.ui.viewmodel.FilterViewModel
+import com.example.listadofactura.ui.viewmodel.BillViewModel
 import com.google.android.material.slider.RangeSlider
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
-import java.util.*
 
 class FilterBillFragment: Fragment() {
 
     lateinit  var binding: FragmentFilterBillBinding
-    var filter = FilterViewModel()
+    private val viewModel: BillViewModel by activityViewModels()
     val dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -36,7 +36,7 @@ class FilterBillFragment: Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_closetFilter ->{
-                goBack(filter.getFilterLiveData().value)
+                goBack(viewModel.getFilterLiveData().value)
             }
         }
         return super.onOptionsItemSelected(item)
@@ -44,9 +44,10 @@ class FilterBillFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //esto solo se ejecutara si hesite un filtro, en el caso de ser NULL pasara de largo
-        if (filter.getFilterLiveData().value != null)
-        init(filter.getFilterLiveData().value!!)
+
+        if (viewModel.getFilterLiveData().value != null) {
+            init(viewModel.getFilterLiveData().value!!)
+        }
 
         binding.bttdateFrom.setOnClickListener { button-> buttonListenerWithDate(view, button)/*setMinDateForDateTo()*/ }
         binding.bttDateTo.setOnClickListener { button-> buttonListenerWithDate(view, button)/*setMaxDateForDateFrom()*/ }
@@ -117,26 +118,27 @@ class FilterBillFragment: Fragment() {
 
         var states = arrayListOf<String>()
 
-        if(binding.cbPagada.isChecked())
+        if(binding.cbPagada.isChecked)
             states.add(Filter.State.Pagada)
 
-        if(binding.cbAnulada.isChecked())
+        if(binding.cbAnulada.isChecked)
             states.add(Filter.State.Anulada)
 
-        if(binding.cbCuotaFigada.isChecked())
+        if(binding.cbCuotaFigada.isChecked)
             states.add(Filter.State.CuotaFija)
 
-        if(binding.cbPendientePago.isChecked())
+        if(binding.cbPendientePago.isChecked)
             states.add(Filter.State.PendientePago)
 
-        if(binding.cbPlanPago.isChecked())
+        if(binding.cbPlanPago.isChecked)
             states.add(Filter.State.PlanPago)
 
         return Filter(dateFrom,dateTo, minMoney, maxMoney, states)
     }
 
     private fun goBack(filter: Filter?) {
-        this.filter.set(filter)
+
+        viewModel.setFilterLiveData(filter)
         view?.findNavController()?.popBackStack()
     }
 
@@ -147,7 +149,7 @@ class FilterBillFragment: Fragment() {
             button.text = ld.format(dateTimeFormatter)
         }
     }
-    //
+
     fun showDatePickerDialog(lisener: DatePickerDialog.OnDateSetListener) {
         val datePicker = DatePickerDialog(requireContext())
         datePicker.setOnDateSetListener(lisener)
