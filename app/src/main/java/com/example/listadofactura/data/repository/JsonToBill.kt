@@ -41,15 +41,6 @@ class JsonToBill() {
             }
             return mutableList
         }
-
-
-        fun getMaxImporte(list: List<Bill>): Double {
-            list.sortedBy {
-                it.importeOrdenacion
-            }
-            return list.last().importeOrdenacion
-        }
-
         /**
          * Recoge las fechas del json (07/02/2021) y lo convierte a localDate
          */

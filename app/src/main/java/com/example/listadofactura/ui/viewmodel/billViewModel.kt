@@ -6,30 +6,31 @@ import com.example.listadofactura.data.model.Bill
 import com.example.listadofactura.data.model.Filter
 import com.example.listadofactura.data.repository.JsonToBill
 import com.example.listadofactura.ui.DowloadService
-import java.util.stream.Collector
-import java.util.stream.Collectors.toList
 import kotlin.streams.toList
 
+/**
+ * comparte
+ */
 class BillViewModel : ViewModel() {
 
     private val billLiveData: MutableLiveData<List<Bill>> = MutableLiveData()
-    private val filterLiveData: MutableLiveData<Filter?> = MutableLiveData()
+    private var filter: Filter? = null
     private val service = DowloadService()
 
     /**
      * Descarga el json y lo guarda
      */
     fun downloadJson() {
-        if(filterLiveData.value == null)
+        if(filter == null)
             billLiveData.postValue(JsonToBill.parseToList(service.returnJsonArray()))
         else{
             var unFilterList = JsonToBill.parseToList(service.returnJsonArray())
             var filterList = unFilterList.stream()
-                    .filter { it.importeOrdenacion >= filterLiveData.value!!.minMoney}
-                    .filter { it.importeOrdenacion <= filterLiveData.value!!.maxMoney}
-                    .filter { it.fecha >= filterLiveData.value!!.dateFrom}
-                    .filter { it.fecha <= filterLiveData.value!!.dateTo}
-                    .filter { filterLiveData.value!!.states.contains(it.descEstado) }
+                    .filter { it.importeOrdenacion >= filter!!.minMoney}
+                    .filter { it.importeOrdenacion <= filter!!.maxMoney}
+                    .filter { it.fecha >= filter!!.dateFrom}
+                    .filter { it.fecha <= filter!!.dateTo}
+                    .filter { filter!!.states.contains(it.descEstado) }
             billLiveData.postValue(filterList.toList())
         }
     }
@@ -38,12 +39,12 @@ class BillViewModel : ViewModel() {
         return billLiveData
     }
 
-    fun getFilterLiveData(): MutableLiveData<Filter?> {
-        return filterLiveData
+    fun getFilter(): Filter? {
+        return filter
     }
 
-    fun setFilterLiveData(filter: Filter?){
-        filterLiveData.postValue(filter)
+    fun setFilter(filter: Filter?){
+        this.filter=filter
     }
 
 }

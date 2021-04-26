@@ -21,13 +21,8 @@ class FilterBillFragment: Fragment() {
     private val viewModel: BillViewModel by activityViewModels()
     val dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? {
-        setHasOptionsMenu(true)
-        binding = FragmentFilterBillBinding.inflate(inflater,container,false)
-        return binding.root
-    }
 
+    //region metodos para añadir un menu y ver si se pulsa en un frament
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         inflater.inflate(R.menu.menu_filter_bill, menu)
@@ -36,19 +31,30 @@ class FilterBillFragment: Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_closetFilter ->{
-                goBack(viewModel.getFilterLiveData().value)
+                goBack(viewModel.getFilter())
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+    //endregion
+
+
+    //region metodos del ciclo de vida
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View? {
+        setHasOptionsMenu(true)
+        binding = FragmentFilterBillBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if (viewModel.getFilterLiveData().value != null) {
-            init(viewModel.getFilterLiveData().value!!)
+        if (viewModel.getFilter() != null) {
+            init(viewModel.getFilter()!!)
         }
 
+        // preparacion de los lisener para el filtro
         binding.bttdateFrom.setOnClickListener { button-> buttonListenerWithDate(view, button)/*setMinDateForDateTo()*/ }
         binding.bttDateTo.setOnClickListener { button-> buttonListenerWithDate(view, button)/*setMaxDateForDateFrom()*/ }
         binding.sldImporte.addOnSliderTouchListener(object : RangeSlider.OnSliderTouchListener {
@@ -61,21 +67,22 @@ class FilterBillFragment: Fragment() {
         })
 
 
-        binding.bttEliminarFiltro.setOnClickListener {
-            goBack(null)
-        }
-        binding.bttAplicar.setOnClickListener {
-            goBack(finit())
-        }
+        //preparacion de los lisener de salida de la aplicacion
+        binding.bttEliminarFiltro.setOnClickListener { goBack(null) }
+        binding.bttAplicar.setOnClickListener { goBack(finit()) }
 
     }
+    //endregion
 
-
-
+    /**
+     * clase qur inicializa en caso que haya filtro
+     */
     private fun init(filter: Filter) {
         //fecha
-        binding.bttdateFrom.text = filter.dateFrom.format(dateTimeFormatter)
-        binding.bttDateTo.text = filter.dateTo.format(dateTimeFormatter)
+        if (filter.dateFrom != LocalDate.MIN)
+            binding.bttdateFrom.text = filter.dateFrom.format(dateTimeFormatter)
+        if (filter.dateTo != LocalDate.MAX)
+            binding.bttDateTo.text = filter.dateTo.format(dateTimeFormatter)
 
         //precio
         binding.tvMinMoney.text = filter.minMoney.toString() + "€"
@@ -102,6 +109,9 @@ class FilterBillFragment: Fragment() {
 
     }
 
+    /**
+     * clase que recoje el filtro
+     */
     private fun finit():Filter{
 
         //este es un tratamiento an caso de no selecionar ninguna fecha para no dar error
@@ -136,12 +146,17 @@ class FilterBillFragment: Fragment() {
         return Filter(dateFrom,dateTo, minMoney, maxMoney, states)
     }
 
+    /**
+     * clase que va a listBill con o sin filtro(en ca so de sin filtro sera null)
+     */
     private fun goBack(filter: Filter?) {
-
-        viewModel.setFilterLiveData(filter)
+        viewModel.setFilter(filter)
         view?.findNavController()?.popBackStack()
     }
 
+    /**
+     * clase para los botones que abre el datePiker
+     */
     fun buttonListenerWithDate(view: View, buttonView:View){
         val button :Button = view.findViewById(buttonView.id)
         showDatePickerDialog{ view, year, month, dayOfMonth ->
@@ -150,6 +165,9 @@ class FilterBillFragment: Fragment() {
         }
     }
 
+    /**
+     * clase que prepara el datePiker
+     */
     fun showDatePickerDialog(lisener: DatePickerDialog.OnDateSetListener) {
         val datePicker = DatePickerDialog(requireContext())
         datePicker.setOnDateSetListener(lisener)

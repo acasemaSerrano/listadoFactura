@@ -23,6 +23,25 @@ class ListBillFragment : Fragment() {
     lateinit var adapter: AdapterBill
     private val viewModel: BillViewModel by activityViewModels()
 
+
+    //region metodos para añadir un menu y ver si se pulsa en un frament
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.menu_list_bill, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_openFilter ->{
+                view?.findNavController()?.navigate(R.id.action_ListBill_to_filterBillFragment)
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+    //endregion
+
+
+    //region metodos del ciclo de vida
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
@@ -34,57 +53,31 @@ class ListBillFragment : Fragment() {
         return view
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.menu_list_bill, menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.action_openFilter ->{
-                var bundle = Bundle()
-                bundle.putSerializable(Filter.TAG, viewModel.getFilterLiveData().value)
-                view?.findNavController()?.navigate(R.id.action_ListBill_to_filterBillFragment,bundle)
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        if (savedInstanceState != null) {
-            viewModel.setFilterLiveData(savedInstanceState.getSerializable(Filter.TAG) as Filter)
-        }
-
+        //proceso normal para un recycleview
+        //1. Busca recycleview
         val recycleview:RecyclerView = view.findViewById(R.id.listBill)
 
-        val layoutManager = LinearLayoutManager(
-            parentFragment?.context,
-            LinearLayoutManager.VERTICAL,
-            false
-        )
+        //2. Crea y añade un layoutManager
+        val layoutManager = LinearLayoutManager(parentFragment?.context,LinearLayoutManager.VERTICAL, false)
         recycleview.layoutManager = layoutManager
 
-        val dividerItemDecoration = DividerItemDecoration(
-            parentFragment?.context,
-            layoutManager.orientation
-        )
+        //EXTRA. prepara el disaño del recycleview
+        val dividerItemDecoration = DividerItemDecoration(parentFragment?.context, layoutManager.orientation)
         recycleview.addItemDecoration(dividerItemDecoration)
 
+        //3. Crea y añade un Adapter
         this.adapter= AdapterBill(requireContext())
         recycleview.adapter = adapter
 
-        viewModel.getBillLiveData().observe(viewLifecycleOwner, {
-            adapter.setList(it)
-        })
+        //4 Cuando haya un lista nueva actializo el adapter
+        viewModel.getBillLiveData().observe(viewLifecycleOwner, {adapter.setList(it)})
 
+        //5 mando a actualizar la lista
         viewModel.downloadJson()
-
-        viewModel.getFilterLiveData().observe(viewLifecycleOwner, {
-
-        })
-
     }
+    //endregion
 
 }

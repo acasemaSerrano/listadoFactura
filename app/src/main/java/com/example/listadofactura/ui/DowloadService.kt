@@ -10,6 +10,9 @@ import kotlinx.coroutines.*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/**
+ * servicio para que no descarge los datos en el hilo principal
+ */
 class DowloadService  : Service() {
 
     private var retrofit: Retrofit = Retrofit.Builder()

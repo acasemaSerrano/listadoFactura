@@ -12,6 +12,9 @@ import com.example.listadofactura.R
 import com.example.listadofactura.data.model.Bill
 import com.example.listadofactura.data.repository.JsonToBill
 
+/**
+ * clase estandar que deriva de adapter
+ */
 class AdapterBill(val context:Context): RecyclerView.Adapter<AdapterBill.Viewholder>() {
 
     var list: List<Bill> = listOf<Bill>()
@@ -29,6 +32,9 @@ class AdapterBill(val context:Context): RecyclerView.Adapter<AdapterBill.Viewhol
         return list.size
     }
 
+    /**
+     * Metodo que actualiza una lis ta que recarga el adapter
+     */
     @JvmName("setList1")
     public fun setList(list: List<Bill>){
         this.list = list
@@ -37,6 +43,9 @@ class AdapterBill(val context:Context): RecyclerView.Adapter<AdapterBill.Viewhol
 
 
     inner class Viewholder(view: View): RecyclerView.ViewHolder(view){
+        /**
+         * se podria sinplificar con binder pero me parecia pocos campos
+         */
         fun bindItems(data: Bill){
             val tvDate:TextView = itemView.findViewById(R.id.tvDate)
             val tvMoney:TextView = itemView.findViewById(R.id.tvMoney)
