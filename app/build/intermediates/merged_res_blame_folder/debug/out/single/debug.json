@@ -1,0 +1,158 @@
+[
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_list_bill.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\menu\\menu_list_bill.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botton_radius_filtro.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable\\botton_radius_filtro.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_setting_lines.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-hdpi\\ic_setting_lines.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_filter_bill.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\layout\\fragment_filter_bill.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\layout_items_bill.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\layout\\items_bill.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_setting_lines.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-xhdpi\\ic_setting_lines.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_close_24.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable\\ic_baseline_close_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_close.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_list_bill.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\layout\\fragment_list_bill.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_close.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-hdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_close.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-mdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_setting_lines.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-xxhdpi\\ic_setting_lines.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_setting_lines.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_setting_lines.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_proximo.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_proximo.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_proximo.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-mdpi\\ic_proximo.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_proximo.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-xxhdpi\\ic_proximo.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_proximo.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-xhdpi\\ic_proximo.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_filter_bill.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\menu\\menu_filter_bill.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_close.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-xhdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_proximo.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-hdpi\\ic_proximo.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_setting_lines.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-mdpi\\ic_setting_lines.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_close.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable-xxhdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    }
+]

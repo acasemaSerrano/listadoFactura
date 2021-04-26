@@ -1,0 +1,6 @@
+com/example/listadofactura/BuildConfig.java
+ com.example.listadofactura.BuildConfig
+com/example/listadofactura/DataBindingTriggerClass.java
+ com.example.listadofactura.DataBindingTriggerClass
+com/example/listadofactura/databinding/FragmentFilterBillBinding.java
+ com.example.listadofactura.databinding.FragmentFilterBillBinding
