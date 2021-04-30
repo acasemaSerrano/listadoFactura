@@ -2,6 +2,7 @@ package com.example.listadofactura.adapter
 
 import android.app.AlertDialog
 import android.content.Context
+import android.graphics.Color.red
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -54,6 +55,7 @@ class AdapterBill(val context:Context): RecyclerView.Adapter<AdapterBill.Viewhol
             tvDate.text = JsonToBill.dateParserPrint(data.fecha.toString())
             tvMoney.text = "${data.importeOrdenacion}€"
             tvState.text =if (data.descEstado.equals("Pagada")) "" else data.descEstado
+            tvState.setTextColor(if(data.descEstado.equals("Pagada")) context.getColor(R.color.black) else context.getColor(R.color.red))
 
             itemView.setOnClickListener{
                 AlertDialog.Builder(context)

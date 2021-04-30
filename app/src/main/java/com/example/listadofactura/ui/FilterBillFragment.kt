@@ -44,6 +44,7 @@ class FilterBillFragment: Fragment() {
     ): View? {
         setHasOptionsMenu(true)
         binding = FragmentFilterBillBinding.inflate(inflater,container,false)
+
         return binding.root
     }
 
