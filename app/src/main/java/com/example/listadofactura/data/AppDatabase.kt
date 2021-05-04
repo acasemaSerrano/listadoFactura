@@ -6,6 +6,8 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.listadofactura.data.dao.BillDao
 import com.example.listadofactura.data.model.Bill
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
 
 @Database(entities = [Bill::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
@@ -26,6 +28,9 @@ abstract class AppDatabase : RoomDatabase() {
         fun getIntance(): AppDatabase{
             return intance!!
         }
+
+        private const val NUMBER_OF_THREADS = 1
+        val databaseWriteExecutor: ExecutorService = Executors.newFixedThreadPool(NUMBER_OF_THREADS)
 
     }
 }

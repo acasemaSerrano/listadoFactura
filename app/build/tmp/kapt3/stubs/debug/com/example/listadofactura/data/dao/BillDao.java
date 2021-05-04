@@ -10,7 +10,7 @@ public abstract interface BillDao {
     @androidx.room.Query(value = "SELECT * FROM bill")
     public abstract java.util.List<com.example.listadofactura.data.model.Bill> getAll();
     
-    @androidx.room.Insert()
+    @androidx.room.Insert(onConflict = androidx.room.OnConflictStrategy.REPLACE)
     public abstract void insert(@org.jetbrains.annotations.NotNull()
     com.example.listadofactura.data.model.Bill bill);
     

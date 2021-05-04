@@ -1,9 +1,6 @@
 package com.example.listadofactura.data.dao
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
 import com.example.listadofactura.data.model.Bill
 
 @Dao
@@ -12,7 +9,7 @@ interface BillDao {
     @Query("SELECT * FROM bill")
     fun getAll(): List<Bill>
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(bill: Bill)
 
     @Delete

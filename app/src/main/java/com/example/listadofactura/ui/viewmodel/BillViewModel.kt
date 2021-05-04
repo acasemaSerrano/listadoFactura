@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.listadofactura.data.model.Bill
 import com.example.listadofactura.data.model.Filter
+import com.example.listadofactura.data.repository.BillRepository
 import com.example.listadofactura.data.repository.JsonToBill
 import com.example.listadofactura.ui.DowloadService
 import kotlin.streams.toList
@@ -21,16 +22,27 @@ class BillViewModel : ViewModel() {
      * Descarga el json y lo guarda
      */
     fun downloadJson() {
+
+        var bills = JsonToBill.parseToList(service.returnJsonArray())
+        BillRepository.addAll(bills)
+
+        filtered(bills)
+    }
+    fun reloadRoom(){
+        var bills = BillRepository.get()
+        filtered(bills)
+    }
+
+    private fun filtered(bills: List<Bill>) {
         if(filter == null)
-            billLiveData.postValue(JsonToBill.parseToList(service.returnJsonArray()))
+            billLiveData.postValue(bills)
         else{
-            var unFilterList = JsonToBill.parseToList(service.returnJsonArray())
-            var filterList = unFilterList.stream()
-                    .filter { it.importeOrdenacion >= filter!!.minMoney}
-                    .filter { it.importeOrdenacion <= filter!!.maxMoney}
-                    .filter { it.getFechaByLocaldate() >= filter!!.dateFrom}
-                    .filter { it.getFechaByLocaldate() <= filter!!.dateTo}
-                    .filter { filter!!.states.contains(it.descEstado) }
+            var filterList = bills.stream()
+                .filter { it.importeOrdenacion >= filter!!.minMoney}
+                .filter { it.importeOrdenacion <= filter!!.maxMoney}
+                .filter { it.getFechaByLocaldate() >= filter!!.dateFrom}
+                .filter { it.getFechaByLocaldate() <= filter!!.dateTo}
+                .filter { filter!!.states.contains(it.descEstado) }
             billLiveData.postValue(filterList.toList())
         }
     }

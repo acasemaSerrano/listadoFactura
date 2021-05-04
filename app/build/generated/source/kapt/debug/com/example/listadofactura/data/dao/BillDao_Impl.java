@@ -30,7 +30,7 @@ public final class BillDao_Impl implements BillDao {
     this.__insertionAdapterOfBill = new EntityInsertionAdapter<Bill>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `Bill` (`descEstado`,`importeOrdenacion`,`fecha`) VALUES (?,?,?)";
+        return "INSERT OR REPLACE INTO `Bill` (`descEstado`,`importeOrdenacion`,`fecha`) VALUES (?,?,?)";
       }
 
       @Override

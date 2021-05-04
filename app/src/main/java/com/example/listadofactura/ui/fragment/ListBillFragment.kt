@@ -1,5 +1,8 @@
 package com.example.listadofactura.ui.fragment
 
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkInfo
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -75,8 +78,17 @@ class ListBillFragment : Fragment() {
         //4 Cuando haya un lista nueva actializo el adapter
         viewModel.getBillLiveData().observe(viewLifecycleOwner, {adapter.setList(it)})
 
-        //5 mando a actualizar la lista
-        viewModel.downloadJson()
+        //5 mando a actualizar la lista (preguntamos si hay conexion a internet)
+
+        val cm = requireContext().getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val activeNetwork: NetworkInfo? = cm.activeNetworkInfo
+        val isConnected: Boolean? =activeNetwork?.isConnectedOrConnecting
+
+        if (isConnected != null && isConnected){
+            viewModel.downloadJson()
+        } else {
+            viewModel.reloadRoom()
+        }
     }
     //endregion
 
