@@ -31,7 +31,7 @@ class JsonToBill() {
                                 dateParser(
                                         it.asJsonObject.get("fecha").toString()
                                                 .substring(1, it.asJsonObject.get("fecha").toString().length - 1)
-                                )
+                                ).toEpochDay()
                         )
                 )
             }

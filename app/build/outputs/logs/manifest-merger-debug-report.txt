@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.databinding:databinding-adapters:4.1.3] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\c99e5452dfdf5d306bd375b654b80280\databinding-adapters-4.1.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.1.3] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\5bdd1a70f042a0e9e356f1f94c5a9742\databinding-runtime-4.1.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.2.2] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\638335cec882afbeaba4f01a95502584\navigation-fragment-ktx-2.2.2\AndroidManifest.xml:17:1-24:12
@@ -22,6 +22,7 @@ MERGED from [com.google.android.material:material:1.3.0] C:\Users\6001771\.gradl
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\a23fc5979b453bb5d9de952a2a79084d\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [it.sephiroth.android.library.simplelogger:simple-logger:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\c46accb56aee511e1364131cdbfe8720\jetified-simple-logger-1.0.0\AndroidManifest.xml:2:1-15:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\8e0a164398b7d6dacc7a2fb7142be0c8\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.databinding:viewbinding:4.1.3] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\64a11fdc278561de5d78e5bcbe5e658a\jetified-viewbinding-4.1.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\818a8ca00c396c2a75c8d5e131d18a45\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\d8f137a5aaec9aee031348d98c86a263\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -46,6 +47,8 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\6001771\.gradl
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\bf9232b0ae0799f4d144928ab679e4bd\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\b829576802764278d934e69c98584a66\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\d92628789da29d3dbfa2496b8e4145c1\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\aeedb2151d12bc8a545ee0c9b4c9cd53\sqlite-framework-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\2d99ac6a493dc97f9b1aeeb382549a18\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\93f64e2eceef6da0e858019acddb3816\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\f0a38dff74e2395c52b03bf5bc796c40\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\efbbe0368b31fe1ba8487b240152aef4\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -56,21 +59,21 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\6001771\.gradle\cach
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\19102a935862607a2ba809ba34d06223\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\7e89cd189b12fc5bf9b6fc925b991350\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\23428094485d958ca9d7035706a63874\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\380000889ca214510e444c2aff0b07c0\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\94599ed2a8cc3f7c8f3726ceb6653166\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:2:11-69
@@ -79,7 +82,7 @@ ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\An
 	android:name
 		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:6:5-23:19
+ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:6:5-24:19
 MERGED from [it.sephiroth.android.library.rangeseekbar:rangeseekbar:1.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\7b68839d708d3d0a0949464941cc4f6e\jetified-rangeseekbar-1.1.0\AndroidManifest.xml:11:5-20
 MERGED from [it.sephiroth.android.library.rangeseekbar:rangeseekbar:1.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\7b68839d708d3d0a0949464941cc4f6e\jetified-rangeseekbar-1.1.0\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\dca81d2e59f2ef6e5c4e3386a5e41173\material-1.3.0\AndroidManifest.xml:22:5-20
@@ -88,6 +91,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\6001771\
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\a23fc5979b453bb5d9de952a2a79084d\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
 MERGED from [it.sephiroth.android.library.simplelogger:simple-logger:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\c46accb56aee511e1364131cdbfe8720\jetified-simple-logger-1.0.0\AndroidManifest.xml:12:5-13:19
 MERGED from [it.sephiroth.android.library.simplelogger:simple-logger:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\c46accb56aee511e1364131cdbfe8720\jetified-simple-logger-1.0.0\AndroidManifest.xml:12:5-13:19
+MERGED from [androidx.room:room-runtime:2.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:24:5-29:19
 MERGED from [androidx.core:core:1.3.2] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\68600a5be4367d49d50b69b04e4caf8f\core-1.3.2\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.3.2] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\68600a5be4367d49d50b69b04e4caf8f\core-1.3.2\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\bf9232b0ae0799f4d144928ab679e4bd\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
@@ -95,35 +100,37 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\60
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\68600a5be4367d49d50b69b04e4caf8f\core-1.3.2\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:12:9-52
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:13:9-52
+	android:name
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:7:9-38
 activity#com.example.listadofactura.ui.MainActivity
-ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:13:9-22:20
+ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:14:9-23:20
 	android:label
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:16:13-45
 	android:theme
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:16:13-68
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:17:13-68
 	android:name
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:14:13-44
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:15:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml:21:27-74
 uses-sdk
 INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
@@ -164,6 +171,8 @@ MERGED from [it.sephiroth.android.library.simplelogger:simple-logger:1.0.0] C:\U
 MERGED from [it.sephiroth.android.library.simplelogger:simple-logger:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\c46accb56aee511e1364131cdbfe8720\jetified-simple-logger-1.0.0\AndroidManifest.xml:8:5-10:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\8e0a164398b7d6dacc7a2fb7142be0c8\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\8e0a164398b7d6dacc7a2fb7142be0c8\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:4.1.3] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\64a11fdc278561de5d78e5bcbe5e658a\jetified-viewbinding-4.1.3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:4.1.3] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\64a11fdc278561de5d78e5bcbe5e658a\jetified-viewbinding-4.1.3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\818a8ca00c396c2a75c8d5e131d18a45\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
@@ -212,6 +221,10 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\6001771\.gradl
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\b829576802764278d934e69c98584a66\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\d92628789da29d3dbfa2496b8e4145c1\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\d92628789da29d3dbfa2496b8e4145c1\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\aeedb2151d12bc8a545ee0c9b4c9cd53\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\aeedb2151d12bc8a545ee0c9b4c9cd53\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\2d99ac6a493dc97f9b1aeeb382549a18\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\2d99ac6a493dc97f9b1aeeb382549a18\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\93f64e2eceef6da0e858019acddb3816\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\93f64e2eceef6da0e858019acddb3816\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\f0a38dff74e2395c52b03bf5bc796c40\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
@@ -232,8 +245,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\6001771\
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\7e89cd189b12fc5bf9b6fc925b991350\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\23428094485d958ca9d7035706a63874\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\23428094485d958ca9d7035706a63874\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\380000889ca214510e444c2aff0b07c0\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\380000889ca214510e444c2aff0b07c0\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\94599ed2a8cc3f7c8f3726ceb6653166\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\94599ed2a8cc3f7c8f3726ceb6653166\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -244,3 +257,11 @@ INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main
 		INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\6001771\AndroidStudioProjects\listadoFactura\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.3.0] C:\Users\6001771\.gradle\caches\transforms-2\files-2.1\828019fead31ee44c9073a4a211cd3f6\room-runtime-2.3.0\AndroidManifest.xml:26:13-74

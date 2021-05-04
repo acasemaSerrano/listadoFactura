@@ -1,4 +1,4 @@
-#Mon Apr 26 13:10:35 CEST 2021
+#Tue May 04 11:22:07 CEST 2021
 base.0=C\:\\Users\\6001771\\AndroidStudioProjects\\listadoFactura\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

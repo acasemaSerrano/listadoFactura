@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listadofactura.R
 import com.example.listadofactura.data.model.Bill
@@ -51,7 +50,7 @@ class AdapterBill(val context:Context): RecyclerView.Adapter<AdapterBill.Viewhol
             val tvMoney:TextView = itemView.findViewById(R.id.tvMoney)
             val tvState:TextView = itemView.findViewById(R.id.tvState)
 
-            tvDate.text = JsonToBill.dateParserPrint(data.fecha.toString())
+            tvDate.text = JsonToBill.dateParserPrint(data.getFechaByLocaldate().toString())
             tvMoney.text = "${data.importeOrdenacion}€"
             tvState.text =if (data.descEstado.equals("Pagada")) "" else data.descEstado
 
