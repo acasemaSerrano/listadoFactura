@@ -29,8 +29,6 @@ abstract class AppDatabase : RoomDatabase() {
             return intance!!
         }
 
-        private const val NUMBER_OF_THREADS = 1
-        val databaseWriteExecutor: ExecutorService = Executors.newFixedThreadPool(NUMBER_OF_THREADS)
 
     }
 }

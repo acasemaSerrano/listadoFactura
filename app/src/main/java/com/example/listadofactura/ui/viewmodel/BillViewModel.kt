@@ -21,14 +21,14 @@ class BillViewModel : ViewModel() {
     /**
      * Descarga el json y lo guarda
      */
-    fun downloadJson() {
+    suspend fun downloadJson() {
 
         var bills = JsonToBill.parseToList(service.returnJsonArray())
         BillRepository.addAll(bills)
 
         filtered(bills)
     }
-    fun reloadRoom(){
+    suspend fun reloadRoom(){
         var bills = BillRepository.get()
         filtered(bills)
     }

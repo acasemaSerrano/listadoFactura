@@ -10,6 +10,10 @@ com/example/listadofactura/data/dao/BillDao_Impl.java
  com.example.listadofactura.data.dao.BillDao_Impl
  com.example.listadofactura.data.dao.BillDao_Impl$1
  com.example.listadofactura.data.dao.BillDao_Impl$2
+ com.example.listadofactura.data.dao.BillDao_Impl$3
+ com.example.listadofactura.data.dao.BillDao_Impl$4
+ com.example.listadofactura.data.dao.BillDao_Impl$5
+ com.example.listadofactura.data.dao.BillDao_Impl$6
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
 com/example/listadofactura/DataBinderMapperImpl.java

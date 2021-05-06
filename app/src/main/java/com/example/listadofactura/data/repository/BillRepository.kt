@@ -4,7 +4,6 @@ import androidx.lifecycle.MutableLiveData
 import com.example.listadofactura.data.AppDatabase
 import com.example.listadofactura.data.dao.BillDao
 import com.example.listadofactura.data.model.Bill
-import java.util.concurrent.ExecutionException
 
 class BillRepository {
     companion object {
@@ -13,27 +12,16 @@ class BillRepository {
 
         private val billLiveData: MutableLiveData<List<Bill>> = MutableLiveData()
 
-        fun get(): List<Bill> {
-             var bills: List<Bill> = arrayListOf()
-
-            try {
-                bills = AppDatabase.databaseWriteExecutor.submit{  billDao.getAll()}.get() as List<Bill>
-            } catch (e: ExecutionException) {
-                e.printStackTrace()
-            } catch (e: InterruptedException) {
-                e.printStackTrace()
-            } finally {
-                return bills
-            }
-
+        suspend fun get(): List<Bill> {
+            return billDao.getAll()
         }
 
-        fun add(bill: Bill){
-            AppDatabase.databaseWriteExecutor.submit{ billDao.insert(bill)}
+        suspend fun add(bill: Bill){
+            billDao.insert(bill)
         }
-        fun addAll(bills: List<Bill>){
-            for (bill in bills)
-                add(bill)
+
+        suspend fun addAll(bills: List<Bill>){
+            billDao.insert(bills)
         }
     }
 }

@@ -7,12 +7,15 @@ import com.example.listadofactura.data.model.Bill
 interface BillDao {
 
     @Query("SELECT * FROM bill")
-    fun getAll(): List<Bill>
+    suspend fun getAll(): List<Bill>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(bill: Bill)
+    suspend fun insert(bill: Bill)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insert(bills: List<Bill>)
 
     @Delete
-    fun delete(bill: Bill)
+    suspend fun delete(bill: Bill)
 
 }

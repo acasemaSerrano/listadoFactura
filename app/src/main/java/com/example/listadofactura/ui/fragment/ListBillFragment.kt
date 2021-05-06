@@ -16,6 +16,8 @@ import com.example.listadofactura.R
 import com.example.listadofactura.adapter.AdapterBill
 import com.example.listadofactura.data.model.Filter
 import com.example.listadofactura.ui.viewmodel.BillViewModel
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -84,11 +86,14 @@ class ListBillFragment : Fragment() {
         val activeNetwork: NetworkInfo? = cm.activeNetworkInfo
         val isConnected: Boolean? =activeNetwork?.isConnectedOrConnecting
 
-        if (isConnected != null && isConnected){
-            viewModel.downloadJson()
-        } else {
-            viewModel.reloadRoom()
+
+        GlobalScope.launch {
+            if (isConnected != null && isConnected)
+                viewModel.downloadJson()
+            else
+                viewModel.reloadRoom()
         }
+
     }
     //endregion
 
