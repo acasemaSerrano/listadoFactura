@@ -9,6 +9,9 @@ import com.example.listadofactura.data.model.Bill
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
+/**
+ * clase database estandar
+ */
 @Database(entities = [Bill::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
 

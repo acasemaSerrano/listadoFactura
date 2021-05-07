@@ -7,14 +7,12 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listadofactura.R
-import com.example.listadofactura.adapter.AdapterBill
-import com.example.listadofactura.data.model.Filter
+import com.example.listadofactura.ui.adapter.AdapterBill
 import com.example.listadofactura.ui.viewmodel.BillViewModel
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -82,11 +80,16 @@ class ListBillFragment : Fragment() {
 
         //5 mando a actualizar la lista (preguntamos si hay conexion a internet)
 
+        //metodos para ber si hay conexion a internet
+        //TODO(estraer a una clase Utils si se usara para otra vez)
         val cm = requireContext().getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val activeNetwork: NetworkInfo? = cm.activeNetworkInfo
         val isConnected: Boolean? =activeNetwork?.isConnectedOrConnecting
 
 
+        //esto ocure en una corutica para no usar el hilo de la interfaz tando la consulta de la
+        // base de datos como la insercion
+        //TODO(implementado por encima falta octimizar)
         GlobalScope.launch {
             if (isConnected != null && isConnected)
                 viewModel.downloadJson()

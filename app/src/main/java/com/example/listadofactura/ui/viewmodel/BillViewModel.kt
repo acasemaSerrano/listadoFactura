@@ -19,7 +19,7 @@ class BillViewModel : ViewModel() {
     private val service = DowloadService()
 
     /**
-     * Descarga el json y lo guarda
+     * Descarga el json y lo guarda en room
      */
     suspend fun downloadJson() {
 
@@ -28,11 +28,19 @@ class BillViewModel : ViewModel() {
 
         filtered(bills)
     }
+
+    /**
+     * carga de room las ultimas facturas
+     */
     suspend fun reloadRoom(){
         var bills = BillRepository.get()
         filtered(bills)
     }
 
+    /**
+     * se estrallo este metodo para poder usarlo en con conexsion y sin ella
+     * TODO(se puede extraer si se usa mas acelante al repoditorio si se le pasa a demas un filter y se elimina el mos value para que devuelva una lista)
+     */
     private fun filtered(bills: List<Bill>) {
         if(filter == null)
             billLiveData.postValue(bills)
