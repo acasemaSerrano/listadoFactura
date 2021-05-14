@@ -29,6 +29,7 @@ class DowloadService  : Service() {
     private suspend fun getJsonArray() : JsonArray?{
         var jsonArray : JsonArray? = null
         val coroutine = CoroutineScope(Dispatchers.IO)
+
         val result : Deferred<JsonArray?> = coroutine.async{
             val call = retrofit.create(JsonPlaceHolderApi::class.java).getAllBill().execute()
             if (call.isSuccessful) {
@@ -38,6 +39,7 @@ class DowloadService  : Service() {
                 Log.e("json","Error no se ha podido cargar el json")
             jsonArray
         }
+
         return result.await()
     }
 
