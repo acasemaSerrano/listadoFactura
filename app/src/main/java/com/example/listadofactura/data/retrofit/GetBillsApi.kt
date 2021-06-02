@@ -7,7 +7,7 @@ import com.google.gson.JsonObject
 /**
  * interfac que se pide para retrofit
  */
-interface JsonPlaceHolderApi {
+interface GetBillsApi {
 
     @GET("facturas")
     fun getAllBill(): Call<JsonObject>

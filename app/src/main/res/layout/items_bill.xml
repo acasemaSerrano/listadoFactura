@@ -21,6 +21,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="pendiente de pago"
+        android:textColor="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tvDate"
         app:layout_constraintTop_toBottomOf="@+id/tvDate" />

@@ -4,7 +4,7 @@ import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.util.Log
-import com.example.listadofactura.data.retrofit.JsonPlaceHolderApi
+import com.example.listadofactura.data.retrofit.GetBillsApi
 import com.google.gson.JsonArray
 import kotlinx.coroutines.*
 import retrofit2.Retrofit
@@ -31,7 +31,7 @@ class DowloadService  : Service() {
         val coroutine = CoroutineScope(Dispatchers.IO)
 
         val result : Deferred<JsonArray?> = coroutine.async{
-            val call = retrofit.create(JsonPlaceHolderApi::class.java).getAllBill().execute()
+            val call = retrofit.create(GetBillsApi::class.java).getAllBill().execute()
             if (call.isSuccessful) {
                 jsonArray = call.body()!!.get("facturas").asJsonArray
             }

@@ -52,7 +52,7 @@ class AdapterBill(val context:Context): RecyclerView.Adapter<AdapterBill.Viewhol
 
             tvDate.text = JsonToBill.dateParserPrint(data.getFechaByLocaldate().toString())
             tvMoney.text = "${data.importeOrdenacion}€"
-            tvState.text =if (data.descEstado.equals("Pagada")) "" else data.descEstado
+            tvState.text =if (data.descEstado.equals("Pagada")) "" else {data.descEstado}
 
             itemView.setOnClickListener{
                 AlertDialog.Builder(context)
