@@ -6,7 +6,7 @@ import com.example.listadofactura.data.model.Bill
 import com.example.listadofactura.data.model.Filter
 import com.example.listadofactura.data.repository.BillRepository
 import com.example.listadofactura.data.repository.JsonToBill
-import com.example.listadofactura.ui.DowloadService
+import com.example.listadofactura.data.retrofit.RestClient
 import kotlin.streams.toList
 
 /**
@@ -16,7 +16,7 @@ class BillViewModel : ViewModel() {
 
     private val billLiveData: MutableLiveData<List<Bill>> = MutableLiveData()
     private var filter: Filter? = null
-    private val service = DowloadService()
+    private val service = RestClient()
 
     /**
      * Descarga el json y lo guarda en room

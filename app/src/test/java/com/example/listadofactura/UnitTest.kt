@@ -1,15 +1,10 @@
 package com.example.listadofactura
 
 import com.example.listadofactura.data.model.Bill
-import com.example.listadofactura.data.repository.BillRepository
 import com.example.listadofactura.data.repository.JsonToBill
-import com.example.listadofactura.ui.DowloadService
+import com.example.listadofactura.data.retrofit.RestClient
 import com.google.gson.JsonArray
-import com.google.gson.JsonElement
 import com.google.gson.JsonParser
-import com.google.gson.JsonStreamParser
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -24,11 +19,11 @@ import java.time.format.DateTimeFormatter
  */
 class UnitTest {
 
-    lateinit var service : DowloadService
+    lateinit var service : RestClient
 
     @Before
     fun init(){
-        service = DowloadService()
+        service = RestClient()
     }
 
     /**
